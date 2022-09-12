@@ -1,0 +1,20 @@
+{
+  "name": "proxo",
+  "version": "1.0.0",
+  "description": "Use NodeJS server as a proxy to access the internet on devices which does not have access to internet or changing proxy settings.",
+  "main": "server.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node server",
+    "dev": "cross-env NODE_ENV=development nodemon server server.js"
+  },
+  "author": "Adham Fouad",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "express": "^4.18.1",
+    "http": "^0.0.1-security",
+    "http-proxy": "^1.18.1",
+    "morgan": "^1.10.0",
+    "request": "^2.88.2"
+  }
+}
